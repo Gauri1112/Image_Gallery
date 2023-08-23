@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background-image: linear-gradient(to bottom,rgb(255, 102, 0),white,green); */
+}
+
+/* FLEX */
+
+/* .container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 3rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px #333;
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+.card:hover img{
+    transition: 0.5s;
+    filter: grayscale(0);
+}
+
+.card:hover figcaption{
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+
+figcaption{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    color: aliceblue;
+} */
+
+/* GRID */
+
+.container{
+    height: 100%;
+    max-width: 1200px;
+    max-height: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 3rem;
+}
+
+h1:hover{
+    text-shadow: 0 0 5px rgb(0, 162, 255);
+    transform: scale(2) translateX(20px) rotate(360deg);
+    transition: 3s;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px #333;
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+.card:hover img{
+    transition: 0.5s;
+    filter: grayscale(0);
+}
+
+figcaption{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    color: aliceblue;
+}
+
+.card:hover figcaption{
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+
+
+
